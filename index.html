@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+         </html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,28 +7,76 @@
     <title>Software Intro  </title>
 </head>
 <body>
-   <h1>
-    This is the first heading 
-</h1> 
-   <h2>
-    This is the second heading 
-</h2> 
-   <h3>
-    This is the third heading 
-</h3> 
-   <h4>
-    This is the fourth heading 
-</h4> 
-   <h5>
-    This is the fifth heading
- </h5> 
-   <h6>
-    This is the sixth heading
-</h6> 
-   <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-    Quia, dolore incidunt id maiores accusamus voluptatibus molestias illo, non officia officiis 
-    exercitationem  corrupti necessitatibus nostrum quisquam quaerat suscipit. Non, nisi pariatur?
-</p>
+    <!-- Semantic Html elements -->
+     <header>
+        <h1> My Website </h1>
+         <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+         </nav>
+     </header>
+    <main>
+         <!-- The home page section -->
+         <section>
+            <hr>
+             <h2>Home</h2>
+             <p>Welcome to our website</p>
+             <button>Get started</button>
+          </section>
+          <!-- The about us section -->
+          <section>
+            <hr>
+              <h2>About us</h2>
+              <p>We are an organiaztion that deals with building websites</p>
+              <p>Reach us out for more information</p>
+              <h3>Our services</h3>
+              <button>Contact us</button>
+          </section>
+
+         <!-- The contact section -->
+           <section>
+            <hr>
+               <h2>Contact us</h2>
+               <p><a href="mailto:seangachango@gmail.com">Reach us for more information</a></p>
+               <p><a href="mailto:siyoxi2023@gmail.com">Reach us about software development</a></p>
+           </section>
+           <hr>
+            <article>
+                 <h2>Latest news</h2>
+                 <p>Details about the latest news</p>
+           </article>
+           <!-- aside contains content that is indirectly related to the main content -->
+       <aside>
+            <h3>Related links</h3>
+            <ul>
+                <li><a href="link1">Link 1</a></li>
+                <li><a href="link2">Link 2</a></li>
+            </ul>
+       </aside>
+       <!-- Validation- a way of ensuring that web documents adhere to specified standards and guidelines -->
+        <label for="username">User Name</label>
+        <br><input type="text" name="username" id="username" required placeholder="Enter your Username">
+
+        <label for="Age">Age</label>
+        <br><input type="number" name="age" min="18" max="100" required placeholder="Enter your Age">
+
+        <label for="Phone number">Phone Number</label>
+        <br><input type="Phone number" name="Phone number" required placeholder="Enter your phone number">
+
+        <label for="Password">Password</label>
+        <br><input type="password" name="password" required placeholder="Enter your password">
+
+        <label for="email">Email</label>
+        <br><input type="email" name="email" required placeholder="Enter your email">
+
+        <button type="submit">Submit</button>
+        <form action="Submit">
+        </form>
+     </main>     
+    <footer>
+          <p><b>&copy; 2025 My Website.All rights reserved</b></p>
+   </footer>
 </body>
-</html>
