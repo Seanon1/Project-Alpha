@@ -1,12 +1,12 @@
 
-         </html><!DOCTYPE html>
-<html lang="en">
+ </html><!DOCTYPE html>
+<br lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Intro  </title>
 </head>
-<body>
+<br>
     <!-- Semantic Html elements -->
      <header>
         <h1> My Website </h1>
@@ -18,7 +18,7 @@
             </ul>
          </nav>
      </header>
-    <main>
+    <br>
          <!-- The home page section -->
          <section>
             <hr>
@@ -58,22 +58,46 @@
        </aside>
        <!-- Validation- a way of ensuring that web documents adhere to specified standards and guidelines -->
         <label for="username">User Name</label>
-        <br><input type="text" name="username" id="username" required placeholder="Enter your Username">
+        <br><input type="text" name="username" id="username" required placeholder="Enter your Username"></br>
 
         <label for="Age">Age</label>
-        <br><input type="number" name="age" min="18" max="100" required placeholder="Enter your Age">
+        <br><input type="number" name="age" min="18" max="100" required placeholder="Enter your Age"></br>
 
         <label for="Phone number">Phone Number</label>
-        <br><input type="Phone number" name="Phone number" required placeholder="Enter your phone number">
+        <br><input type="Phone number" name="Phone number" required placeholder="Enter your phone number"></br>
 
         <label for="Password">Password</label>
-        <br><input type="password" name="password" required placeholder="Enter your password">
+        <br><input type="password" name="password" required placeholder="Enter your password"></br>
 
         <label for="email">Email</label>
-        <br><input type="email" name="email" required placeholder="Enter your email">
+        <br><input type="email" name="email" required placeholder="Enter your email"></br>
 
-        <button type="submit">Submit</button>
-        <form action="Submit">
+        <button type="submit" value="submit">Submit</button><br></br>
+        <form action="/submit" method="post"> 
+
+            <!-- radio input -->
+             <p>Gender</p>
+             <input type="radio" id="male" name="gender" value="male">
+             <label for="male">Male</label>
+             <input type="radio" id="female" name="gender" value="female">
+             <label for="female">Female</label>
+
+             <!-- checkbox -->
+              <p>Interests</p>
+              <input type="checkbox" id="coding" name="coding" value="coding">
+              <label for="coding">Coding</label>
+
+              <input type="checkbox" id="Basketball" name="Basketball" value="Basketball">
+              <label for="Basketball">Basketball</label>
+
+              <input type="checkbox" id="Football" name="Football" value="Football">
+              <label for="Football">Football</label>
+
+              <input type="checkbox" id="Chess" name="Chess" value="Chess">
+              <label for="Chess">Chess</label>
+            
+              <input type="checkbox" id="Art" name="Art" value="Art">
+              <label for="Art">Art</label>
         </form>
      </main>     
     <footer>
