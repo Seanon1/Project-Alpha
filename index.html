@@ -7,6 +7,7 @@
     <title>Software Intro  </title>
 </head>
 <br>
+    <div>
     <!-- Semantic Html elements -->
      <header>
         <h1> My Website </h1>
@@ -19,6 +20,9 @@
          </nav>
      </header>
     <br>
+    </div>
+
+    <div>
          <!-- The home page section -->
          <section>
             <hr>
@@ -26,6 +30,9 @@
              <p>Welcome to our website</p>
              <button>Get started</button>
           </section>
+    </div>  
+    
+    <div>
           <!-- The about us section -->
           <section>
             <hr>
@@ -35,7 +42,9 @@
               <h3>Our services</h3>
               <button>Contact us</button>
           </section>
+    </div>      
 
+    <div>
          <!-- The contact section -->
            <section>
             <hr>
@@ -44,10 +53,16 @@
                <p><a href="mailto:siyoxi2023@gmail.com">Reach us about software development</a></p>
            </section>
            <hr>
+    </div>
+    
+    <div>
             <article>
                  <h2>Latest news</h2>
                  <p>Details about the latest news</p>
            </article>
+    </div>
+    
+    <div>
            <!-- aside contains content that is indirectly related to the main content -->
        <aside>
             <h3>Related links</h3>
@@ -56,34 +71,45 @@
                 <li><a href="link2">Link 2</a></li>
             </ul>
        </aside>
+    </div>
+       
+          <div>
        <!-- Validation- a way of ensuring that web documents adhere to specified standards and guidelines -->
+        <fieldset>
         <label for="username">User Name</label>
-        <br><input type="text" name="username" id="username" required placeholder="Enter your Username"></br>
+        <input type="text" name="username" id="username" required placeholder="Enter your Username">
 
         <label for="Age">Age</label>
-        <br><input type="number" name="age" min="18" max="100" required placeholder="Enter your Age"></br>
+        <input type="number" name="age" min="18" max="100" required placeholder="Enter your Age">
 
         <label for="Phone number">Phone Number</label>
-        <br><input type="Phone number" name="Phone number" required placeholder="Enter your phone number"></br>
+        <input type="Phone number" name="Phone number" required placeholder="Enter your phone number">
 
         <label for="Password">Password</label>
-        <br><input type="password" name="password" required placeholder="Enter your password"></br>
+        <input type="password" name="password" required placeholder="Enter your password">
 
         <label for="email">Email</label>
-        <br><input type="email" name="email" required placeholder="Enter your email"></br>
+        <input type="email" name="email" required placeholder="Enter your email">
 
         <button type="submit" value="submit">Submit</button><br></br>
         <form action="/submit" method="post"> 
+        </fieldset> 
+            </div>  
 
+            <div>
             <!-- radio input -->
              <p>Gender</p>
              <input type="radio" id="male" name="gender" value="male">
              <label for="male">Male</label>
              <input type="radio" id="female" name="gender" value="female">
              <label for="female">Female</label>
+             </div>
 
+            <div> 
              <!-- checkbox -->
+              <fieldset>
               <p>Interests</p>
+              <p><b>Please select an interest</b></p>
               <input type="checkbox" id="coding" name="coding" value="coding">
               <label for="coding">Coding</label>
 
@@ -98,8 +124,110 @@
             
               <input type="checkbox" id="Art" name="Art" value="Art">
               <label for="Art">Art</label>
+              </fieldset>
+              <br>
+            </div>  
+
+            <div>
+              <br>
+              <!-- select dropdowns -->
+              <label for="Country">Country:</label>
+              <form name="Country" id="Country">
+                <select>
+                  <option value="select">Select a Country</option>
+                  <option value="usa">USA</option>
+                  <option value="canada">CANADA</option>
+                  <option value="mexico">MEXICO</option>
+                  <option value="uk">UK</option>
+                  <option value="kenya">KENYA</option>
+                  <option value="mongolia">MONGOLIA</option>
+                  <option value="brazil">BRAZIL</option>
+                  <option value="mordovia">MORDOVIA</option>
+                  <option value="madagascar">MADAGASCAR</option>
+                  <option value="cayman islands">CAYMAN ISLANDS</option>
+                </select>
+                <br>
+              </form>
+            </div>
+
+            <div>
+               <br>
+               <!-- textarea -->
+               <label for="message">Message:</label>
+               <textarea name="message" id="message" rows="4" cols="30"></textarea>
+               </form>
+               <br>
+            </div>
+
+            <div>
+              <br>
+               <!-- grouping form elements -->
+               <form action="/submit" method="post">
+                  <legend><u>Personal Information</u></legend>
+                  <label for="fname">First Name:</label>
+                  <input type="text" id="fname" required placeholder="Enter your First name">
+
+                  <label for="mname">Middle Name:</label>
+                  <input type="text" id="mname" required placeholder="Enter your Middle name">
+
+                  <label for="lname">Last Name:</label>
+                  <input type="text" id="lname" required placeholder="Enter your Last name">    
+
+                  <!-- select dropdowns -->
+                  <select> 
+                  <form name="Religion" id="Religion"></form> 
+                  <option value="select">Select a Religion</option>
+                  <option value="Christian">Christian</option>
+                  <option value="Muslim">Muslim</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Other">Other</option>
+                     </select>
+                  </fieldset>
+                  <br>
+           </div>         
+
+           <div>  
+            <fieldset>
+                <legend>Preferences:</legend> 
+                <label for="newsletter">Subscribe to our newsletter:</label>
+                <input type="checkbox" name="checkbox" id="newsletter">
+            </fieldset>
+            <br>
+           </div>    
+
+            <div>
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50">
+
+             <!-- color picker -->
+             <label for="color">Choose a color</label>
+             <input type="color" id="color" name="color">   
+
+             <!-- date picker -->
+              <label for="date">Date of birth</label>
+              <input type="date" id="dob" name="dob">
+             <input type="submit" value="submit">
+           </div>
         </form>
-     </main>     
+        
+        <div>
+         <!-- embedding Images -->
+          <image src="/Assets/UN.jpg" alt="/images/UN.jpg" width="100px" height="100px">
+        </div>
+
+        <!-- embedding video -->
+         <video controls width="500" poster="thumbnail.jpg">
+          <source src="/Assets/Unite Nations.mp4" type="video/mp4">
+          Your browser does not support the video content
+         </video>
+
+        <!-- embedding audio -->
+         <audio controls>
+            <source src="/Assets/Talk [Official Audio].mp3" type="Audio/mp3">
+            Your browser does not support the audio element
+         </audio>
+
+     </main> 
     <footer>
           <p><b>&copy; 2025 My Website.All rights reserved</b></p>
    </footer>
